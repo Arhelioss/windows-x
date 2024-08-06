@@ -1,0 +1,13 @@
+# TCP
+New-NetFirewallRule -Name "Allow-TCP-22" -DisplayName "Allow TCP 22" -Protocol TCP -LocalPort 22 -Action Allow
+New-NetFirewallRule -Name "Allow-TCP-80" -DisplayName "Allow TCP 80" -Protocol TCP -LocalPort 80 -Action Allow
+New-NetFirewallRule -Name "Allow-TCP-443" -DisplayName "Allow TCP 443" -Protocol TCP -LocalPort 443 -Action Allow
+New-NetFirewallRule -Name "Allow-TCP-53" -DisplayName "Allow TCP 53" -Protocol TCP -LocalPort 53 -Action Allow
+New-NetFirewallRule -Name "Allow-TCP-1234" -DisplayName "Allow TCP 1234" -Protocol TCP -LocalPort 1234 -Action Allow
+
+# UDP
+New-NetFirewallRule -Name "Allow-UDP-22" -DisplayName "Allow UDP 22" -Protocol UDP -LocalPort 22 -Action Allow
+New-NetFirewallRule -Name "Allow-UDP-80" -DisplayName "Allow UDP 80" -Protocol UDP -LocalPort 80 -Action Allow
+New-NetFirewallRule -Name "Allow-UDP-443" -DisplayName "Allow UDP 443" -Protocol UDP -LocalPort 443 -Action Allow
+New-NetFirewallRule -Name "Allow-UDP-53" -DisplayName "Allow UDP 53" -Protocol UDP -LocalPort 53 -Action Allow
+New-NetFirewallRule -Name "Allow-UDP-1234" -DisplayName "Allow UDP 1234" -Protocol UDP -LocalPort 1234 -Action Allow
